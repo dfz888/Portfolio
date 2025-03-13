@@ -6,20 +6,27 @@
     <title>Portafolio - David Ferrer Zamora</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: 'Raleway', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e8f5e9;
+            background: url('https://www.transparenttextures.com/patterns/circuit-board.png') #e8f5e9;
             color: #333;
         }
         header {
-            background-color: #1b5e20;
+            background: linear-gradient(135deg, #1b5e20, #4caf50);
             color: white;
             padding: 40px 20px;
             text-align: center;
+            position: relative;
+        }
+        .logo {
+            width: 100px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
         nav ul {
             list-style: none;
@@ -66,65 +73,23 @@
             color: white;
             margin-top: 40px;
         }
-        a {
-            color: #1b5e20;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
     <header>
+        <img src="first_logo.png" alt="Logo" class="logo">
         <h1>David Ferrer Zamora</h1>
         <p>Biotecnólogo | Investigador | Docente</p>
         <nav>
             <ul>
                 <li><a href="#about"><i class="fas fa-user"></i> Sobre mí</a></li>
-                <li><a href="#research"><i class="fas fa-microscope"></i> Investigación</a></li>
+                <li><a href="#research"><i class="fas fa-dna"></i> Investigación</a></li>
                 <li><a href="#publications"><i class="fas fa-book-open"></i> Publicaciones</a></li>
                 <li><a href="#teaching"><i class="fas fa-chalkboard-teacher"></i> Docencia</a></li>
                 <li><a href="#contact"><i class="fas fa-envelope"></i> Contacto</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="about">
-        <h2><i class="fas fa-user"></i> Sobre mí</h2>
-        <p>Biotecnólogo con experiencia en microbiología, bioinformática y biotecnología industrial. Especializado en optimización de procesos y análisis microbiológico en distintos sectores, incluyendo agricultura y cosmética. Apasionado por la divulgación científica y la enseñanza.</p>
-    </section>
-    
-    <section id="research">
-        <h2><i class="fas fa-microscope"></i> Investigación</h2>
-        <ul>
-            <li><strong>Evoluciones microbianas en compostaje de alga invasora:</strong> Caracterización de comunidades microbianas durante el compostaje de <i>Rugulopteryx okamurae</i> y su potencial biofertilizante.</li>
-            <li><strong>Degradación de plásticos en suelos mediante microorganismos:</strong> Estudio de soportes para inoculación de bacterias degradadoras de plásticos.</li>
-            <li><strong>Desarrollo de productos para agricultura sostenible:</strong> Investigación en biofertilizantes y biopesticidas basados en microorganismos.</li>
-            <li><strong>Desarrollo de portales genómicos y recursos bioinformáticos:</strong> Aplicaciones en la mejora genética de cultivos subtropicales y mediterráneos.</li>
-        </ul>
-    </section>
-    
-    <section id="publications">
-        <h2><i class="fas fa-book-open"></i> Publicaciones</h2>
-        <ul>
-            <li><strong>Trabajo Fin de Grado:</strong> <i>Evolución de grupos microbianos funcionales en el co-compostaje del alga invasora <i>Rugulopteryx okamurae</i> y residuos vegetales</i>.</li>
-            <li><strong>Trabajo Fin de Máster:</strong> <i>Búsqueda de soportes para la inoculación de bacterias degradadoras de plásticos en suelos</i>.</li>
-            <li><strong>Publicación a congreso:</strong> Segura, M.L.; Ferrer, D.; Martínez, J.M.; Muro, S.; Pérez, I. (2021). "CO-COMPOSTAJE DE ARRIBAZONES DE <i>R. okamurae</i> CON RESIDUOS AGRÍCOLAS Y DE JARDINERÍA". 50º Seminario de técnicos y especialistas en horticultura, MAPAMA. Canarias, 15-21 de noviembre de 2021.</li>
-        </ul>
-    </section>
-    
-    <section id="teaching">
-        <h2><i class="fas fa-chalkboard-teacher"></i> Docencia</h2>
-        <p>Profesor particular en los niveles de grado, máster y FP en las asignaturas de microbiología, bioquímica y genética.</p>
-    </section>
-    
-    <section id="contact">
-        <h2><i class="fas fa-envelope"></i> Contacto</h2>
-        <p>Email: <a href="mailto:david.ferrer@csic.es">david.ferrer@csic.es</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/david-ferrer-zamora/" target="_blank">Perfil</a></p>
-    </section>
     
     <footer>
         <p>&copy; 2024 David Ferrer Zamora. Todos los derechos reservados.</p>
