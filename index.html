@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - David Ferrer Zamora</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Raleway', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e8f5e9;
             color: #333;
         }
         header {
-            background-color: #2e7d32;
+            background-color: #1b5e20;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         nav ul {
             list-style: none;
             padding: 0;
+            text-align: center;
         }
         nav ul li {
             display: inline;
@@ -31,19 +34,45 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 18px;
         }
         section {
-            padding: 20px;
-            margin: 20px;
+            padding: 40px;
+            margin: 30px auto;
+            width: 80%;
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #81c784;
+            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        h2 i {
+            margin-right: 10px;
+            color: #1b5e20;
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #2e7d32;
+            padding: 20px;
+            background-color: #1b5e20;
             color: white;
+            margin-top: 40px;
+        }
+        a {
+            color: #1b5e20;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -53,22 +82,22 @@
         <p>Biotecnólogo | Investigador | Docente</p>
         <nav>
             <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#research">Investigación</a></li>
-                <li><a href="#publications">Publicaciones</a></li>
-                <li><a href="#teaching">Docencia</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> Sobre mí</a></li>
+                <li><a href="#research"><i class="fas fa-microscope"></i> Investigación</a></li>
+                <li><a href="#publications"><i class="fas fa-book-open"></i> Publicaciones</a></li>
+                <li><a href="#teaching"><i class="fas fa-chalkboard-teacher"></i> Docencia</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contacto</a></li>
             </ul>
         </nav>
     </header>
     
     <section id="about">
-        <h2>Sobre mí</h2>
+        <h2><i class="fas fa-user"></i> Sobre mí</h2>
         <p>Biotecnólogo con experiencia en microbiología, bioinformática y biotecnología industrial. Especializado en optimización de procesos y análisis microbiológico en distintos sectores, incluyendo agricultura y cosmética. Apasionado por la divulgación científica y la enseñanza.</p>
     </section>
     
     <section id="research">
-        <h2>Investigación</h2>
+        <h2><i class="fas fa-microscope"></i> Investigación</h2>
         <ul>
             <li><strong>Evoluciones microbianas en compostaje de alga invasora:</strong> Caracterización de comunidades microbianas durante el compostaje de <i>Rugulopteryx okamurae</i> y su potencial biofertilizante.</li>
             <li><strong>Degradación de plásticos en suelos mediante microorganismos:</strong> Estudio de soportes para inoculación de bacterias degradadoras de plásticos.</li>
@@ -78,7 +107,7 @@
     </section>
     
     <section id="publications">
-        <h2>Publicaciones</h2>
+        <h2><i class="fas fa-book-open"></i> Publicaciones</h2>
         <ul>
             <li><strong>Trabajo Fin de Grado:</strong> <i>Evolución de grupos microbianos funcionales en el co-compostaje del alga invasora <i>Rugulopteryx okamurae</i> y residuos vegetales</i>.</li>
             <li><strong>Trabajo Fin de Máster:</strong> <i>Búsqueda de soportes para la inoculación de bacterias degradadoras de plásticos en suelos</i>.</li>
@@ -87,12 +116,12 @@
     </section>
     
     <section id="teaching">
-        <h2>Docencia</h2>
+        <h2><i class="fas fa-chalkboard-teacher"></i> Docencia</h2>
         <p>Profesor particular en los niveles de grado, máster y FP en las asignaturas de microbiología, bioquímica y genética.</p>
     </section>
     
     <section id="contact">
-        <h2>Contacto</h2>
+        <h2><i class="fas fa-envelope"></i> Contacto</h2>
         <p>Email: <a href="mailto:david.ferrer@csic.es">david.ferrer@csic.es</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/david-ferrer-zamora/" target="_blank">Perfil</a></p>
     </section>
@@ -102,4 +131,3 @@
     </footer>
 </body>
 </html>
-
