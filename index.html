@@ -66,6 +66,20 @@
             margin-right: 10px;
             color: #1b5e20;
         }
+        .publication {
+            cursor: pointer;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .publication-content {
+            display: none;
+            padding: 10px;
+            background-color: #dcedc8;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -74,10 +88,16 @@
             margin-top: 40px;
         }
     </style>
+    <script>
+        function togglePublication(id) {
+            var content = document.getElementById(id);
+            content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
+        }
+    </script>
 </head>
 <body>
     <header>
-        <img src="first_logo.png" alt="Logo" class="logo">
+        <img src="logo.png" alt="Logo" class="logo">
         <h1>David Ferrer Zamora</h1>
         <p>Biotecnólogo | Investigador | Docente</p>
         <nav>
@@ -90,6 +110,18 @@
             </ul>
         </nav>
     </header>
+    
+    <section id="publications">
+        <h2><i class="fas fa-book-open"></i> Publicaciones</h2>
+        <div class="publication" onclick="togglePublication('tfg')">🔍 <strong>Trabajo Fin de Grado:</strong> Evolución de grupos microbianos funcionales en el co-compostaje del alga invasora <i>Rugulopteryx okamurae</i></div>
+        <div class="publication-content" id="tfg">Este estudio analiza la evolución de comunidades microbianas durante el compostaje del alga invasora <i>Rugulopteryx okamurae</i>, explorando su potencial como biofertilizante.</div>
+        
+        <div class="publication" onclick="togglePublication('tfm')">🔍 <strong>Trabajo Fin de Máster:</strong> Búsqueda de soportes para la inoculación de bacterias degradadoras de plásticos en suelos</div>
+        <div class="publication-content" id="tfm">Investigación sobre distintos soportes que permiten mantener la viabilidad y actividad enzimática de bacterias capaces de degradar plásticos en entornos contaminados.</div>
+        
+        <div class="publication" onclick="togglePublication('congreso')">🔍 <strong>Publicación a congreso:</strong> CO-COMPOSTAJE DE ARRIBAZONES DE <i>R. okamurae</i> CON RESIDUOS AGRÍCOLAS Y DE JARDINERÍA</div>
+        <div class="publication-content" id="congreso">Presentado en el 50º Seminario de técnicos y especialistas en horticultura, MAPAMA (Canarias, 2021). Se evaluó la viabilidad del compostaje del alga invasora <i>Rugulopteryx okamurae</i> con residuos agrícolas para generar productos sostenibles.</div>
+    </section>
     
     <footer>
         <p>&copy; 2024 David Ferrer Zamora. Todos los derechos reservados.</p>
