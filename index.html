@@ -66,19 +66,9 @@
             margin-right: 10px;
             color: #1b5e20;
         }
-        .publication {
-            cursor: pointer;
-            background-color: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .publication-content {
-            display: none;
-            padding: 10px;
-            background-color: #dcedc8;
-            border-radius: 5px;
-            margin-top: 5px;
+        .highlight {
+            font-weight: bold;
+            color: #1b5e20;
         }
         footer {
             text-align: center;
@@ -88,23 +78,17 @@
             margin-top: 40px;
         }
     </style>
-    <script>
-        function togglePublication(id) {
-            var content = document.getElementById(id);
-            content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
-        }
-    </script>
 </head>
 <body>
     <header>
         <img src="first_logo.png" alt="Logo" class="logo">
         <h1>David Ferrer Zamora</h1>
-        <p>Biotecnólogo | Investigador | Docente</p>
+        <p>Biotecnólogo | Investigador | Docente | Divulgador Científico</p>
         <nav>
             <ul>
                 <li><a href="#about"><i class="fas fa-user"></i> Sobre mí</a></li>
                 <li><a href="#research"><i class="fas fa-dna"></i> Investigación</a></li>
-                <li><a href="#publications"><i class="fas fa-book-open"></i> Publicaciones</a></li>
+                <li><a href="#outreach"><i class="fas fa-bullhorn"></i> Divulgación</a></li>
                 <li><a href="#teaching"><i class="fas fa-chalkboard-teacher"></i> Docencia</a></li>
                 <li><a href="#contact"><i class="fas fa-envelope"></i> Contacto</a></li>
             </ul>
@@ -113,25 +97,29 @@
 
     <section id="about">
         <h2><i class="fas fa-user"></i> Sobre mí</h2>
-        <p>Soy un biotecnólogo con una sólida formación académica y experiencia profesional en microbiología, bioinformática y biotecnología industrial. Me gradué en Biotecnología por la Universidad de Almería, donde adquirí conocimientos fundamentales en áreas como biología celular, genética, microbiología e ingeniería bioquímica. Posteriormente, completé el Máster en Biotecnología Industrial y Agroalimentaria en la misma universidad, enfocándome en el desarrollo de una bioeconomía basada en el conocimiento científico para mejorar la competitividad en sectores como la salud, la agroalimentación y el medio ambiente. Durante mi formación, participé en proyectos de investigación relacionados con la optimización de procesos biotecnológicos y el análisis microbiológico en diversos sectores, incluyendo la agricultura y la cosmética. Además, tengo una fuerte pasión por la divulgación científica y la enseñanza, lo que me ha llevado a desempeñarme como docente en áreas relacionadas con la biotecnología.</p>
+        <p>Soy un biotecnólogo graduado por la Universidad de Almería, con especialización en biotecnología industrial y agroalimentaria. Mi formación académica abarca disciplinas clave como genética molecular, microbiología aplicada y bioinformática. Durante mi trayectoria, he participado en diversos proyectos de investigación centrados en la optimización de procesos biotecnológicos, el control microbiológico en diferentes industrias y el desarrollo de soluciones sostenibles para el sector agrícola.</p>
+        <p>Además, tengo una fuerte vocación por la <span class="highlight">divulgación científica</span>, colaborando activamente en eventos como <span class="highlight">Biotechnofarm</span> y <span class="highlight">La Noche de los Investigadores</span>, acercando la biotecnología a estudiantes y al público general mediante charlas, talleres y demostraciones interactivas.</p>
     </section>
 
-    <section id="research">
-        <h2><i class="fas fa-dna"></i> Investigación</h2>
+    <section id="outreach">
+        <h2><i class="fas fa-bullhorn"></i> Divulgación Científica</h2>
+        <p>Mi labor en divulgación científica se centra en hacer accesible la biotecnología a la sociedad a través de eventos y programas educativos. He participado en:</p>
         <ul>
-            <li><strong>Evoluciones microbianas en compostaje de alga invasora:</strong> Caracterización de comunidades microbianas durante el compostaje de <i>Rugulopteryx okamurae</i> y su potencial biofertilizante.</li>
-            <li><strong>Degradación de plásticos en suelos mediante microorganismos:</strong> Estudio de soportes para inoculación de bacterias degradadoras de plásticos.</li>
-            <li><strong>Desarrollo de productos para agricultura sostenible:</strong> Investigación en biofertilizantes y biopesticidas basados en microorganismos.</li>
-            <li><strong>Desarrollo de portales genómicos y recursos bioinformáticos:</strong> Aplicaciones en la mejora genética de cultivos subtropicales y mediterráneos.</li>
+            <li><strong>Biotechnofarm:</strong> Programa de la Asociación Española de Biotecnología que busca fomentar el interés por la biotecnología entre estudiantes de secundaria y bachillerato mediante charlas interactivas y experimentos demostrativos.</li>
+            <li><strong>La Noche de los Investigadores:</strong> Evento europeo en el que científicos de diferentes disciplinas presentan su trabajo al público general a través de actividades dinámicas y divulgativas.</li>
+            <li>Charlas en institutos y centros educativos sobre el impacto de la biotecnología en la salud, el medio ambiente y la industria.</li>
         </ul>
     </section>
 
-    <section id="teaching">
-        <h2><i class="fas fa-chalkboard-teacher"></i> Docencia</h2>
-        <p>Profesor particular en los niveles de grado, máster y Formación Profesional en las asignaturas de microbiología, bioquímica y genética.</p>
+    <section id="contact">
+        <h2><i class="fas fa-envelope"></i> Contacto</h2>
+        <p>Email: <a href="mailto:david.ferrer@csic.es">david.ferrer@csic.es</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/david-ferrer-zamora/" target="_blank">Perfil</a></p>
     </section>
 
-    <section id="contact">
-        <h2><i class="fas fa-envelope"></i> Contact
-::contentReference[oaicite:0]{index=0}
- 
+    <footer>
+        <p>&copy; 2024 David Ferrer Zamora. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
