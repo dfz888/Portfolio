@@ -24,6 +24,7 @@
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#publicaciones">Publicaciones</a></li>
+            <li><a href="#formacion-complementaria">Formación Complementaria</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -39,13 +40,14 @@
         <img src="biotechnofarm.jpg" alt="Divulgación en Biotechnofarm" class="imagen-seccion">
     </section>
     <section id="experiencia">
-        <h2>Experiencia Profesional</h2>
-        <ul>
-            <li><strong>Kimitec:</strong> Investigación en biotecnología aplicada a la agricultura.</li>
-            <li><strong>Briseis:</strong> Control de calidad y análisis de agua en la industria cosmética.</li>
-            <li><strong>Investigación Actual:</strong> Bioinformática aplicada a cultivos subtropicales y mediterráneos.</li>
-        </ul>
-    </section>
+    <h2>Experiencia Profesional</h2>
+    <ul>
+        <li><strong>Profesor Particular:</strong> Experiencia docente para alumnos de Grado, Máster y Formación Profesional (FP), impartiendo clases de microbiología, genética y bioquímica.</li>
+        <li><strong>Kimitec:</strong> Investigación en biotecnología aplicada a la agricultura.</li>
+        <li><strong>Briseis:</strong> Control de calidad y análisis de agua en la industria cosmética.</li>
+        <li><strong>Investigación Actual:</strong> Bioinformática aplicada a cultivos subtropicales y mediterráneos.</li>
+    </ul>
+</section>
     <section id="proyectos">
         <h2>Proyectos</h2>
         <p>Mi proyecto actual se centra en la bioinformática aplicada a cultivos subtropicales y mediterráneos, utilizando herramientas computacionales para el análisis genómico.</p>
@@ -53,13 +55,22 @@
     <section id="publicaciones">
         <h2>Publicaciones y Trabajos Académicos</h2>
         <div class="publicacion" onclick="toggleDetails('tfg')">🔍 <strong>Trabajo Fin de Grado:</strong> Evolución de grupos microbianos funcionales en el co-compostaje del alga invasora <i>Rugulopteryx okamurae</i></div>
-        <div class="publicacion-content" id="tfg" style="display:none;">Este estudio analiza la evolución de comunidades microbianas durante el compostaje del alga invasora <i>Rugulopteryx okamurae</i>, explorando su potencial como biofertilizante.</div>
-        <img src="IMG_2022-03-10-12-03-05-080.jpg" alt="Placa de cultivo - TFG/TFM" class="imagen-seccion">
+        <div class="publicacion-content" id="tfg" style="display:none;">Este estudio analiza la evolución de comunidades microbianas durante el compostaje del alga invasora <i>Rugulopteryx okamurae</i>, explorando su potencial como biofertilizante. <a href="https://github.com/dfz888/Portfolio/blob/main/TFG%20David%20Ferrer%20Zamora.pdf" target="_blank">Descargar TFG</a></div>
         <div class="publicacion" onclick="toggleDetails('tfm')">🔍 <strong>Trabajo Fin de Máster:</strong> Búsqueda de soportes para la inoculación de bacterias degradadoras de plásticos en suelos</div>
-        <div class="publicacion-content" id="tfm" style="display:none;">Investigación sobre distintos soportes que permiten mantener la viabilidad y actividad enzimática de bacterias capaces de degradar plásticos en entornos contaminados.</div>
-        
-        <div class="publicacion" onclick="toggleDetails('congreso')">🔍 <strong>Publicación a congreso:</strong> CO-COMPOSTAJE DE ARRIBAZONES DE <i>R. okamurae</i> CON RESIDUOS AGRÍCOLAS Y DE JARDINERÍA</div>
-        <div class="publicacion-content" id="congreso" style="display:none;">Presentado en el 50º Seminario de técnicos y especialistas en horticultura, MAPAMA (Canarias, 2021). Se evaluó la viabilidad del compostaje del alga invasora <i>Rugulopteryx okamurae</i> con residuos agrícolas para generar productos sostenibles.</div>
+        <div class="publicacion-content" id="tfm" style="display:none;">Investigación sobre soportes que permiten mantener la viabilidad y actividad enzimática de bacterias capaces de degradar plásticos en entornos contaminados. <a href="https://github.com/dfz888/Portfolio/blob/main/TFM%20David%20Ferrer%20Zamora_FINAL_V2.pdf" target="_blank">Descargar TFM</a></div>
+        <div class="publicacion" onclick="toggleDetails('cv')">🔍 <strong>Currículum Vitae:</strong> David Ferrer Zamora</div>
+        <div class="publicacion-content" id="cv" style="display:none;"><a href="https://github.com/dfz888/Portfolio/blob/main/David%20Ferrer%20Zamora%20CV%20es.pdf" target="_blank">Descargar CV</a></div>
+    </section>
+    <section id="formacion-complementaria">
+        <h2>Formación Complementaria</h2>
+        <ul>
+            <li>Curso con código 20ª5V2780201, impartido por la Consejería de Agricultura, Ganadería, Pesca y Desarrollo Sostenible (IFAPA, La Mojonera). <strong>260 horas (teórico-prácticas)</strong>. Años 2020-2021.</li>
+            <li>Jornadas: Piensos para Acuicultura, Jóvenes Investigadores y Transferencia Biotecnológica a Empresas, por Campus CEIMAR y Universidad de Almería. <strong>7,5 horas</strong>. Año 2020.</li>
+            <li>Curso de verano: <em>Los genes que comemos: Presente y futuro de la manipulación y mejora genética de frutas y hortalizas</em>, Universidad de Almería. <strong>25 horas</strong>. Año 2019.</li>
+            <li>Curso R (básico y avanzado), impartido por Udemy Academy. <strong>10,5 horas por curso</strong>. Año 2022.</li>
+            <li>Curso: Química Analítica Básica, Universidad de Tokyo. <strong>10 horas</strong>. Año 2024.</li>
+            <li>Curso: Microbioma humano: Su implicación en la salud, impartido por la Sociedad Española de Microbiología. <strong>100 horas</strong>. Año 2024.</li>
+        </ul>
     </section>
     <section id="contacto">
         <h2>Contacto</h2>
@@ -72,8 +83,10 @@
             <textarea id="mensaje" name="mensaje" required></textarea>
             <button type="submit">Enviar</button>
         </form>
+        <p>Sígueme en <a href="https://www.linkedin.com/in/david-ferrer-zamora/" target="_blank">LinkedIn</a>.</p>
     </section>
     <script src="script.js"></script>
 </body>
 </html>
+
 
