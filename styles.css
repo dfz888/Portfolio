@@ -1,55 +1,119 @@
-//* General Styles */
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/circuit-board.png') repeat; /* Fondo texturizado */
+    color: #333;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f5f5f5;
 }
 
 header {
+    background-color: #2e7d32;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #2e7d32;
     padding: 10px 20px;
-    color: white;
 }
 
 header .logo {
     max-height: 60px;
 }
 
+header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Navegación */
+nav {
+    background-color: #2e7d32;
+    padding: 10px 0;
+}
+
 nav ul {
     display: flex;
+    justify-content: center;
     list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
+    font-size: 16px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #ffd700; /* Amarillo dorado al pasar el ratón */
 }
 
+/* Estilo de las secciones */
 main {
     padding: 20px;
     margin: 20px auto;
     width: 90%;
-    background: white;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    font-weight: bold;
+    text-align: center;
+    color: #2e7d32;
+}
+
+/* Imágenes */
 .imagen-seccion {
     max-width: 100%;
     height: auto;
-    margin: 10px 0;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* Botones */
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #1b5e20; /* Verde más oscuro */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        width: 95%;
+    }
 }
