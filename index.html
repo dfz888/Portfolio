@@ -3,58 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Científico</title>
+    <title>Portafolio Científico</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDetails(id) {
+            var content = document.getElementById(id);
+            content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
+        }
+    </script>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo Científico" class="logo">
-        <h1>Mi Portfolio Científico</h1>
+        <img src="first_logo.png" alt="Logo Personal" class="logo">
+        <h1>Bienvenido a mi Portafolio Científico</h1>
     </header>
-    
     <nav>
         <ul>
             <li><a href="#sobre-mi">Sobre Mí</a></li>
-            <li><a href="#publicaciones">Publicaciones</a></li>
             <li><a href="#divulgacion">Divulgación</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#publicaciones">Publicaciones</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
-    
     <section id="sobre-mi">
         <h2>Sobre Mí</h2>
-        <p>Soy un profesional en biotecnología con formación en la Universidad de Almería, donde cursé el Grado en Biotecnología y el Máster en Biotecnología Industrial y Agroalimentaria. He trabajado en el sector cosmético en Briseis, especializado en control de calidad y análisis de agua. Actualmente, desarrollo un proyecto de bioinformática aplicada a cultivos subtropicales y mediterráneos.</p>
-        <img src="photo.jpg" alt="Trabajando en el laboratorio" class="imagen">
+        <p>Soy graduado en Biotecnología por la Universidad de Almería y tengo un Máster en Biotecnología Industrial y Agroalimentaria. Durante mis estudios, adquirí experiencia en técnicas de biología molecular, microbiología y bioinformática.</p>
+        <p>Actualmente, estoy involucrado en un proyecto de bioinformática aplicada a cultivos subtropicales y mediterráneos. Además, tengo experiencia en control de calidad y microbiología en la industria cosmética.</p>
+        <img src="laboratorio.jpg" alt="Trabajando en el laboratorio" class="imagen-seccion">
     </section>
-    
-    <section id="publicaciones">
-        <h2>Publicaciones</h2>
-        <p>Aquí se listan mis publicaciones científicas y participaciones en congresos:</p>
-        <ul>
-            <li>TFG: Estudio microbiológico en aguas de uso industrial.</li>
-            <li>TFM: Análisis bioinformático en cultivos subtropicales.</li>
-            <li>Póster presentado en congreso internacional sobre biotecnología.</li>
-        </ul>
-        <img src="IMG_2022-03-10-12-03-05-080.jpg" alt="Investigación TFG/TFM" class="imagen">
-    </section>
-    
     <section id="divulgacion">
         <h2>Divulgación Científica</h2>
-        <p>Participo activamente en eventos como Biotechnofarm y La Noche de los Investigadores, acercando la biotecnología al público.</p>
-        <img src="1741943513645.jpg" alt="Divulgación en Biotechnofarm" class="imagen">
+        <p>Participo activamente en eventos de divulgación como Biotechnofarm y La Noche de los Investigadores, donde acerco la biotecnología a estudiantes y público general mediante experimentos y charlas educativas.</p>
+        <img src="biotechnofarm.jpg" alt="Divulgación en Biotechnofarm" class="imagen-seccion">
     </section>
-    
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de:</p>
+    <section id="experiencia">
+        <h2>Experiencia Profesional</h2>
         <ul>
-            <li>Email: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></li>
-            <li>GitHub: <a href="https://github.com/usuario" target="_blank">github.com/usuario</a></li>
+            <li><strong>Kimitec:</strong> Investigación en biotecnología aplicada a la agricultura.</li>
+            <li><strong>Briseis:</strong> Control de calidad y análisis de agua en la industria cosmética.</li>
+            <li><strong>Investigación Actual:</strong> Bioinformática aplicada a cultivos subtropicales y mediterráneos.</li>
         </ul>
     </section>
-    
-    <footer>
-        <p>&copy; 2025 Mi Portfolio Científico</p>
-    </footer>
+    <section id="publicaciones">
+        <h2>Publicaciones y Trabajos Académicos</h2>
+        <div class="publicacion" onclick="toggleDetails('tfg')">🔍 <strong>Trabajo Fin de Grado:</strong> Evolución de grupos microbianos funcionales en el co-compostaje del alga invasora <i>Rugulopteryx okamurae</i></div>
+        <div class="publicacion-content" id="tfg" style="display:none;">Este estudio analiza la evolución de comunidades microbianas durante el compostaje del alga invasora <i>Rugulopteryx okamurae</i>, explorando su potencial como biofertilizante.</div>
+        
+        <div class="publicacion" onclick="toggleDetails('tfm')">🔍 <strong>Trabajo Fin de Máster:</strong> Búsqueda de soportes para la inoculación de bacterias degradadoras de plásticos en suelos</div>
+        <div class="publicacion-content" id="tfm" style="display:none;">Investigación sobre distintos soportes que permiten mantener la viabilidad y actividad enzimática de bacterias capaces de degradar plásticos en entornos contaminados.</div>
+        
+        <div class="publicacion" onclick="toggleDetails('congreso')">🔍 <strong>Publicación a congreso:</strong> CO-COMPOSTAJE DE ARRIBAZONES DE <i>R. okamurae</i> CON RESIDUOS AGRÍCOLAS Y DE JARDINERÍA</div>
+        <div class="publicacion-content" id="congreso" style="display:none;">Presentado en el 50º Seminario de técnicos y especialistas en horticultura, MAPAMA (Canarias, 2021). Se evaluó la viabilidad del compostaje del alga invasora <i>Rugulopteryx okamurae</i> con residuos agrícolas para generar productos sostenibles.</div>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
