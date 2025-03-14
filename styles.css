@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png') repeat; /* Textura alternativa */
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png') repeat; /* Textura de fondo */
     background-color: #f0f8f0; /* Color de fondo base */
     color: #333;
     margin: 0;
@@ -22,9 +22,12 @@ header .logo {
 }
 
 header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     margin: 0 auto;
+    color: #e8ffe8; /* Blanco verdoso */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para legibilidad */
+    font-weight: bold;
 }
 
 /* Navegación */
@@ -118,3 +121,4 @@ button:hover {
         width: 95%;
     }
 }
+
