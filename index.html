@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Científico</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function toggleDetails(id) {
-            var content = document.getElementById(id);
-            content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
-        }
-    </script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -40,14 +35,14 @@
         <img src="biotechnofarm.jpg" alt="Divulgación en Biotechnofarm" class="imagen-seccion">
     </section>
     <section id="experiencia">
-    <h2>Experiencia Profesional</h2>
-    <ul>
-        <li><strong>Profesor Particular:</strong> Experiencia docente para alumnos de Grado, Máster y Formación Profesional (FP), impartiendo clases de microbiología, genética y bioquímica.</li>
-        <li><strong>Kimitec:</strong> Investigación en biotecnología aplicada a la agricultura.</li>
-        <li><strong>Briseis:</strong> Control de calidad y análisis de agua en la industria cosmética.</li>
-        <li><strong>Investigación Actual:</strong> Bioinformática aplicada a cultivos subtropicales y mediterráneos.</li>
-    </ul>
-</section>
+        <h2>Experiencia Profesional</h2>
+        <ul>
+            <li><strong>Profesor Particular:</strong> Experiencia docente para alumnos de Grado, Máster y Formación Profesional (FP), impartiendo clases de microbiología, genética y bioquímica.</li>
+            <li><strong>Kimitec:</strong> Investigación en biotecnología aplicada a la agricultura.</li>
+            <li><strong>Briseis:</strong> Control de calidad y análisis de agua en la industria cosmética.</li>
+            <li><strong>Investigación Actual:</strong> Bioinformática aplicada a cultivos subtropicales y mediterráneos.</li>
+        </ul>
+    </section>
     <section id="proyectos">
         <h2>Proyectos</h2>
         <p>Mi proyecto actual se centra en la bioinformática aplicada a cultivos subtropicales y mediterráneos, utilizando herramientas computacionales para el análisis genómico.</p>
@@ -55,11 +50,11 @@
     <section id="publicaciones">
         <h2>Publicaciones y Trabajos Académicos</h2>
         <div class="publicacion" onclick="toggleDetails('tfg')">🔍 <strong>Trabajo Fin de Grado:</strong> Evolución de grupos microbianos funcionales en el co-compostaje del alga invasora <i>Rugulopteryx okamurae</i></div>
-        <div class="publicacion-content" id="tfg" style="display:none;">Este estudio analiza la evolución de comunidades microbianas durante el compostaje del alga invasora <i>Rugulopteryx okamurae</i>, explorando su potencial como biofertilizante. <a href="https://github.com/dfz888/Portfolio/blob/main/TFG%20David%20Ferrer%20Zamora.pdf" target="_blank">Descargar TFG</a></div>
+        <div class="publicacion-content" id="tfg" style="display:none;">Este estudio analiza la evolución de comunidades microbianas durante el compostaje del alga invasora <i>Rugulopteryx okamurae</i>, explorando su potencial como biofertilizante. <a href="LINK_A_TFG" target="_blank">Descargar TFG</a></div>
         <div class="publicacion" onclick="toggleDetails('tfm')">🔍 <strong>Trabajo Fin de Máster:</strong> Búsqueda de soportes para la inoculación de bacterias degradadoras de plásticos en suelos</div>
-        <div class="publicacion-content" id="tfm" style="display:none;">Investigación sobre soportes que permiten mantener la viabilidad y actividad enzimática de bacterias capaces de degradar plásticos en entornos contaminados. <a href="https://github.com/dfz888/Portfolio/blob/main/TFM%20David%20Ferrer%20Zamora_FINAL_V2.pdf" target="_blank">Descargar TFM</a></div>
+        <div class="publicacion-content" id="tfm" style="display:none;">Investigación sobre soportes que permiten mantener la viabilidad y actividad enzimática de bacterias capaces de degradar plásticos en entornos contaminados. <a href="LINK_A_TFM" target="_blank">Descargar TFM</a></div>
         <div class="publicacion" onclick="toggleDetails('cv')">🔍 <strong>Currículum Vitae:</strong> David Ferrer Zamora</div>
-        <div class="publicacion-content" id="cv" style="display:none;"><a href="https://github.com/dfz888/Portfolio/blob/main/David%20Ferrer%20Zamora%20CV%20es.pdf" target="_blank">Descargar CV</a></div>
+        <div class="publicacion-content" id="cv" style="display:none;"><a href="LINK_A_CV" target="_blank">Descargar CV</a></div>
     </section>
     <section id="formacion-complementaria">
         <h2>Formación Complementaria</h2>
@@ -85,7 +80,6 @@
         </form>
         <p>Sígueme en <a href="https://www.linkedin.com/in/david-ferrer-zamora/" target="_blank">LinkedIn</a>.</p>
     </section>
-    <script src="script.js"></script>
 </body>
 </html>
 
