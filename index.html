@@ -3,48 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Científico</title>
+    <title>Portfolio Científico</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Mi Portafolio Científico</h1>
+        <img src="logo.png" alt="Logo Científico" class="logo">
+        <h1>Mi Portfolio Científico</h1>
     </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#publicaciones">Publicaciones</a></li>
+            <li><a href="#divulgacion">Divulgación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
     <section id="sobre-mi">
         <h2>Sobre Mí</h2>
-        <p>Soy un investigador en biotecnología con formación en la Universidad de Almería. Completé el Grado en Biotecnología, donde adquirí conocimientos en genética, microbiología y bioquímica, y posteriormente cursé el Máster en Biotecnología Industrial y Agroalimentaria, donde me especialicé en técnicas avanzadas de biotecnología aplicada.</p>
-        <p>Actualmente, trabajo en un proyecto de bioinformática aplicada a cultivos subtropicales y mediterráneos, combinando análisis de datos con biología molecular.</p>
-        <img src="laboratorio.jpg" alt="Trabajando en el laboratorio en Kimitec">
+        <p>Soy un profesional en biotecnología con formación en la Universidad de Almería, donde cursé el Grado en Biotecnología y el Máster en Biotecnología Industrial y Agroalimentaria. He trabajado en el sector cosmético en Briseis, especializado en control de calidad y análisis de agua. Actualmente, desarrollo un proyecto de bioinformática aplicada a cultivos subtropicales y mediterráneos.</p>
+        <img src="photo.jpg" alt="Trabajando en el laboratorio" class="imagen">
     </section>
-    <section id="experiencia">
-        <h2>Experiencia Profesional</h2>
+    
+    <section id="publicaciones">
+        <h2>Publicaciones</h2>
+        <p>Aquí se listan mis publicaciones científicas y participaciones en congresos:</p>
         <ul>
-            <li><strong>Kimitec:</strong> Investigación en biotecnología agrícola.</li>
-            <li><strong>Briseis:</strong> Control de calidad y análisis de agua.</li>
+            <li>TFG: Estudio microbiológico en aguas de uso industrial.</li>
+            <li>TFM: Análisis bioinformático en cultivos subtropicales.</li>
+            <li>Póster presentado en congreso internacional sobre biotecnología.</li>
         </ul>
+        <img src="IMG_2022-03-10-12-03-05-080.jpg" alt="Investigación TFG/TFM" class="imagen">
     </section>
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <p>Mi proyecto actual se centra en la bioinformática aplicada a cultivos subtropicales y mediterráneos, utilizando herramientas computacionales para el análisis genómico.</p>
-        <img src="IMG_2022-03-10-12-03-05-080.jpg" alt="Placa de cultivo - TFG/TFM">
-    </section>
+    
     <section id="divulgacion">
         <h2>Divulgación Científica</h2>
-        <p>Participo activamente en eventos como 'La Noche de los Investigadores' y en iniciativas como Biotechnofarm, donde imparto charlas y talleres sobre biotecnología para acercar la ciencia a la sociedad.</p>
-        <img src="biotechnofarm.jpg" alt="Divulgación en Biotechnofarm">
+        <p>Participo activamente en eventos como Biotechnofarm y La Noche de los Investigadores, acercando la biotecnología al público.</p>
+        <img src="1741943513645.jpg" alt="Divulgación en Biotechnofarm" class="imagen">
     </section>
+    
     <section id="contacto">
         <h2>Contacto</h2>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <p>Puedes contactarme a través de:</p>
+        <ul>
+            <li>Email: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></li>
+            <li>GitHub: <a href="https://github.com/usuario" target="_blank">github.com/usuario</a></li>
+        </ul>
     </section>
+    
+    <footer>
+        <p>&copy; 2025 Mi Portfolio Científico</p>
+    </footer>
 </body>
 </html>
-
