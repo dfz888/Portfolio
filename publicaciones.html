@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="first_logo.png" alt="Logo Personal" class="logo">
+        <h1>Publicaciones y Trabajos Académicos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="divulgacion.html">Divulgación</a></li>
+            <li><a href="experiencia.html">Experiencia</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="formacion.html">Formación Complementaria</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="publicacion" onclick="toggleDetails('tfg')">🔍 <strong>Trabajo Fin de Grado:</strong> Evolución de grupos microbianos funcionales en el co-compostaje del alga invasora <i>Rugulopteryx okamurae</i></div>
+            <div class="publicacion-content" id="tfg" style="display:none;">
+                Este estudio analiza comunidades microbianas durante el compostaje de <i>Rugulopteryx okamurae</i>.
+                <button onclick="window.open('https://github.com/dfz888/Portfolio/blob/main/TFG%20David%20Ferrer%20Zamora.pdf')">Descargar TFG</button>
+            </div>
+            <div class="publicacion" onclick="toggleDetails('tfm')">🔍 <strong>Trabajo Fin de Máster:</strong> Búsqueda de soportes para la inoculación de bacterias degradadoras de plásticos en suelos</div>
+            <div class="publicacion-content" id="tfm" style="display:none;">
+                Evaluación de soportes para bacterias biodegradadoras de plásticos.
+                <button onclick="window.open('https://github.com/dfz888/Portfolio/blob/main/TFM%20David%20Ferrer%20Zamora_FINAL_V2.pdf')">Descargar TFM</button>
+            </div>
+            <div class="publicacion" onclick="toggleDetails('congreso')">🔍 <strong>Publicación a congreso:</strong> CO-COMPOSTAJE DE ARRIBAZONES DE <i>R. okamurae</i> CON RESIDUOS AGRÍCOLAS Y DE JARDINERÍA</div>
+            <div class="publicacion-content" id="congreso" style="display:none;">
+                Presentado en el 50º Seminario de técnicos y especialistas en horticultura, MAPAMA (Canarias, 2021). Se evaluó la viabilidad del compostaje del alga invasora <i>Rugulopteryx okamurae</i> con residuos agrícolas para generar productos sostenib
+            </div>
+        </section>
+    </main>
+</body>
+</html>
